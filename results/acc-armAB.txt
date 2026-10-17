@@ -1,3 +1,6 @@
+# CORRECTION: "steps" here is the change in spec_verify_calls_total around a whole sparkDash job, which includes
+# sparkDash's 32-token warm-up request. So "steps" is too high and "tok/step" and "ms/step" are too low in absolute
+# terms. tok/step counts committed tokens (accepted drafts + 1). decode_tps is sparkDash's own number and is not affected.
 prose tok 256 steps 92 tok/step 2.78 decode_tps 84.33 ms/step 33.0
 prose tok 256 steps 92 tok/step 2.78 decode_tps 83.22 ms/step 33.4
 prose tok 256 steps 92 tok/step 2.78 decode_tps 84.2 ms/step 33.0
