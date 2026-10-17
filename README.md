@@ -6,7 +6,7 @@ RoCEnante paths work and one of the forwarded legs crosses the switch. No cable 
 swapped **in software**.
 
 This repository is the recipe, the scripts and the raw numbers. It was measured on DeepSeek-V4.1-Flash-1017, TP4, using
-[knapcio's TP4 recipe](https://github.com/adapt-ai-systems/DeepSeek-V4.1-Flash-1017-4x-GB10-TP4) (our fork, updated for the 1017 weights).
+[knapcio's TP4 recipe](https://github.com/knapcio/DeepSeek-V4.1-Flash-4x-DGX-Spark-TP4) through [our fork for the 1017 weights](https://github.com/adapt-ai-systems/DeepSeek-V4.1-Flash-1017-4x-GB10-TP4).
 We found no public report of the hairpin mesh crossing a switch hop. That is a statement about what we found, not a claim that nobody has done it.
 
 ## What is here
