@@ -1,6 +1,7 @@
 # CORRECTION: "steps" here is the change in spec_verify_calls_total around a whole sparkDash job, which includes
 # sparkDash's 32-token warm-up request. So "steps" is too high and "tok/step" and "ms/step" are too low in absolute
 # terms. tok/step counts committed tokens (accepted drafts + 1). decode_tps is sparkDash's own number and is not affected.
+# Per-request numbers (no warm-up in the count): prose 3.12, code 5.82, structured 5.95 tok/step, in the 1017 fork's docs/deepseek-v4.1-flash-1017.md.
 prose tok 256 steps 92 tok/step 2.78 decode_tps 84.33 ms/step 33.0
 prose tok 256 steps 92 tok/step 2.78 decode_tps 83.22 ms/step 33.4
 prose tok 256 steps 92 tok/step 2.78 decode_tps 84.2 ms/step 33.0
