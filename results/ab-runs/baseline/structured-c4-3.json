@@ -1,0 +1,102 @@
+{
+ "benchId": "0b27f05a-8cbe-4fa1-b301-01b6de9dc26c",
+ "sparkId": "ring",
+ "status": "completed",
+ "startedAt": 1792252652622,
+ "completedAt": 1792252659575,
+ "config": {
+  "port": 8888,
+  "modelId": "default",
+  "concurrencies": [
+   4
+  ],
+  "maxTokens": 256,
+  "promptType": "structured"
+ },
+ "progress": {
+  "currentConcurrency": null,
+  "completedLevels": 1,
+  "totalLevels": 1,
+  "message": "Done"
+ },
+ "results": [
+  {
+   "concurrency": 4,
+   "streamsOk": 4,
+   "streamsFailed": 0,
+   "meanDecodeTps": 55.97,
+   "medianDecodeTps": 52.92,
+   "minDecodeTps": 41.08,
+   "maxDecodeTps": 76.99,
+   "meanTtftMs": 252.2,
+   "medianTtftMs": 252.14,
+   "aggregateDecodeTps": 164.31,
+   "meanPrefillTps": 126.89,
+   "medianPrefillTps": 126.92,
+   "aggregatePrefillTps": 505.54,
+   "totalPrefillTokens": 128,
+   "totalDecodeTokens": 1020,
+   "totalCompletionTokens": 1024,
+   "durationMs": 6461.07,
+   "error": null,
+   "streams": [
+    {
+     "index": 0,
+     "ttftContentMs": 253.19,
+     "reasoningChunks": 0,
+     "ttftMs": 253.19,
+     "decodeTps": 76.99,
+     "decodeTokens": 255,
+     "completionTokens": 256,
+     "prefillTps": 126.39,
+     "prefillTokens": 32,
+     "totalMs": 3565.44,
+     "error": null
+    },
+    {
+     "index": 1,
+     "ttftContentMs": 252.22,
+     "reasoningChunks": 0,
+     "ttftMs": 252.22,
+     "decodeTps": 51.89,
+     "decodeTokens": 255,
+     "completionTokens": 256,
+     "prefillTps": 126.88,
+     "prefillTokens": 32,
+     "totalMs": 5166.29,
+     "error": null
+    },
+    {
+     "index": 2,
+     "ttftContentMs": 252.06,
+     "reasoningChunks": 0,
+     "ttftMs": 252.06,
+     "decodeTps": 53.94,
+     "decodeTokens": 255,
+     "completionTokens": 256,
+     "prefillTps": 126.95,
+     "prefillTokens": 32,
+     "totalMs": 4979.6,
+     "error": null
+    },
+    {
+     "index": 3,
+     "ttftContentMs": 251.34,
+     "reasoningChunks": 0,
+     "ttftMs": 251.34,
+     "decodeTps": 41.08,
+     "decodeTokens": 255,
+     "completionTokens": 256,
+     "prefillTps": 127.32,
+     "prefillTokens": 32,
+     "totalMs": 6459.4,
+     "error": null
+    }
+   ],
+   "model": "default"
+  }
+ ],
+ "error": null,
+ "durationMs": 6953,
+ "owner": null
+}

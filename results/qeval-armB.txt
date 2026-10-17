@@ -1,0 +1,13 @@
+
+71/75 passed (94.7%), 1 hit the token cap, wall 1.8 min, median 84.99 tok/s
+   code     24/25
+   format    7/7
+   json      6/8
+   math     13/14
+   prose     5/5
+   reason   16/16
+wrote qeval-ds1017-armB.json
+  FAIL  code_interval_intersect AssertionError
+  FAIL  json_escape            len does not match text length
+  FAIL  json_count             got 11, want 10
+  FAIL  math_m9                got 2.0, want 38.0

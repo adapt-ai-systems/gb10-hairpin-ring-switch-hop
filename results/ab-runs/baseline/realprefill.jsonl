@@ -1,0 +1,6 @@
+{"target": 8192, "rep": 1, "prompt_tokens": 6993, "ttft_s": 1.745, "prefill_tps": 4007.6}
+{"target": 8192, "rep": 2, "prompt_tokens": 6986, "ttft_s": 1.734, "prefill_tps": 4029.7}
+{"target": 8192, "rep": 3, "prompt_tokens": 6985, "ttft_s": 1.718, "prefill_tps": 4065.1}
+{"target": 32768, "rep": 1, "prompt_tokens": 28624, "ttft_s": 5.996, "prefill_tps": 4773.9}
+{"target": 32768, "rep": 2, "prompt_tokens": 28622, "ttft_s": 6.197, "prefill_tps": 4618.4}
+{"target": 32768, "rep": 3, "prompt_tokens": 28623, "ttft_s": 6.176, "prefill_tps": 4634.4}

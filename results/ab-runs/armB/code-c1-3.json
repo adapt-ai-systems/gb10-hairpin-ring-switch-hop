@@ -1,0 +1,63 @@
+{
+ "benchId": "3bf99af8-ef80-4736-9ec6-4927530eeb39",
+ "sparkId": "ring",
+ "status": "completed",
+ "startedAt": 1792255406277,
+ "completedAt": 1792255409104,
+ "config": {
+  "port": 8888,
+  "modelId": "default",
+  "concurrencies": [
+   1
+  ],
+  "maxTokens": 256,
+  "promptType": "code"
+ },
+ "progress": {
+  "currentConcurrency": null,
+  "completedLevels": 1,
+  "totalLevels": 1,
+  "message": "Done"
+ },
+ "results": [
+  {
+   "concurrency": 1,
+   "streamsOk": 1,
+   "streamsFailed": 0,
+   "meanDecodeTps": 137.01,
+   "medianDecodeTps": 137.01,
+   "minDecodeTps": 137.01,
+   "maxDecodeTps": 137.01,
+   "meanTtftMs": 378.21,
+   "medianTtftMs": 378.21,
+   "aggregateDecodeTps": 137.01,
+   "meanPrefillTps": 156,
+   "medianPrefillTps": 156,
+   "aggregatePrefillTps": 156,
+   "totalPrefillTokens": 59,
+   "totalDecodeTokens": 255,
+   "totalCompletionTokens": 256,
+   "durationMs": 2239.89,
+   "error": null,
+   "streams": [
+    {
+     "index": 0,
+     "ttftContentMs": 378.21,
+     "reasoningChunks": 0,
+     "ttftMs": 378.21,
+     "decodeTps": 137.01,
+     "decodeTokens": 255,
+     "completionTokens": 256,
+     "prefillTps": 156,
+     "prefillTokens": 59,
+     "totalMs": 2239.46,
+     "error": null
+    }
+   ],
+   "model": "default"
+  }
+ ],
+ "error": null,
+ "durationMs": 2827,
+ "owner": null
+}

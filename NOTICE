@@ -1,0 +1,21 @@
+gb10-hairpin-ring-switch-hop
+Copyright (c) 2026 Adapt AI Systems
+
+Own work (MIT, see LICENSE): README.md, docs/, scripts/, results/.
+
+patches/plan.py.diff
+  A change to scripts/ring_mesh/plan.py of knapcio/DeepSeek-V4.1-Flash-4x-DGX-Spark-TP4 at commit 27616be
+  (https://github.com/knapcio/DeepSeek-V4.1-Flash-4x-DGX-Spark-TP4). That repository is licensed
+  AGPL-3.0-or-later. The patch contains lines of that file, so it is distributed under the same licence.
+  The licence text is in LICENSES/AGPL-3.0.txt. A related change, a `--reversed HOST` option, is proposed upstream as knapcio/DeepSeek-V4.1-Flash-4x-DGX-Spark-TP4 pull request 12.
+  That option is not what we ran; we ran the environment-variable patch in this repository.
+
+The mesh itself is not in this repository. It comes from:
+  FujitsuPolycom/sparkring, commit f16b5f4 (https://github.com/FujitsuPolycom/sparkring), Apache License 2.0,
+  labelled research-only by its authors. The RDMA-TX marker is built from
+  spark_transport/fabric/cx7_hairpin_diagonal/native/mlx5_rdma_tx_rewrite_probe.c in that checkout.
+  No sparkring code is copied here. Read its licence and its status label before you use it.
+
+The recipe these scripts drive is knapcio/DeepSeek-V4.1-Flash-4x-DGX-Spark-TP4 (and its upstream,
+MiaAI-Lab/DeepSeek-v4.1-Flash-DGX-Sparks). Its scripts/ring_mesh (hairpin.sh, inventory.sh, plan.py and the
+systemd units) are used as they are, from a checkout of that recipe.

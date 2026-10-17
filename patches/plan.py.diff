@@ -1,0 +1,49 @@
+--- a/scripts/ring_mesh/plan.py
++++ b/scripts/ring_mesh/plan.py
+@@ -22,6 +22,7 @@
+ import argparse
+ import ipaddress
+ import json
++import os
+ import shlex
+ import subprocess
+ import sys
+@@ -36,6 +37,16 @@
+     ("counter_clockwise", 0): "enp1s0f1np1",
+     ("counter_clockwise", 1): "enP2p1s0f1np1",
+ }
++# Hosts whose ring roles are reversed in software
++# (physical f1 = clockwise OUT, f0 = counter-clockwise IN). SSH names, comma-separated.
++REVERSED = {h for h in os.environ.get("MESH_REVERSED_HOSTS", "").split(",") if h}
++FLIP = {"clockwise": "counter_clockwise", "counter_clockwise": "clockwise"}
++
++
++def port_of(host, direction, f):
++    return PORTS[(FLIP[direction] if host in REVERSED else direction, f)]
++
++
+ HCAS = ("rocep1s0f0", "rocep1s0f1", "roceP2p1s0f0", "roceP2p1s0f1")  # B12X_ROCE_HCA order
+ 
+ 
+@@ -86,9 +97,9 @@
+         cur = order[-1]
+         nxt = []
+         for f in (0, 1):
+-            h, nd = peer.get((cur, PORTS[("clockwise", f)]), (None, None))
+-            if nd != PORTS[("counter_clockwise", f)]:
+-                raise SystemExit(f"{cur} {PORTS[('clockwise', f)]} reaches {h} {nd}; sparkring needs every f0 port "
++            h, nd = peer.get((cur, port_of(cur, "clockwise", f)), (None, None))
++            if h is None or nd != port_of(h, "counter_clockwise", f):
++                raise SystemExit(f"{cur} {port_of(cur, 'clockwise', f)} reaches {h} {nd}; sparkring needs every f0 port "
+                                  f"cabled to the next node's f1 port on the same PCIe domain")
+             nxt.append(h)
+         if nxt[0] != nxt[1]:
+@@ -108,7 +119,7 @@
+         for d in ("clockwise", "counter_clockwise"):
+             ports[d] = []
+             for f in (0, 1):
+-                nd = PORTS[(d, f)]
++                nd = port_of(h, d, f)
+                 p = invs[h]["ports"][nd]
+                 ports[d].append({
+                     "function": f, "netdev": nd, "rdma_device": p["rdma"],

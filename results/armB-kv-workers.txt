@@ -1,0 +1,15 @@
+== node1
+[2026-10-17 16:41:01 TP1] Load weight begin. avail mem=36.66 GB
+[2026-10-17 16:41:13 TP1] Load weight end. elapsed=11.14 s, type=DeepseekV4ForCausalLMDSpark, quant=fp8, avail mem=33.75 GB, mem usage=2.91 GB.
+[2026-10-17 16:41:13 TP1] Memory pool end. avail mem=24.95 GB
+[2026-10-17 16:41:13 TP1] Memory pool end. avail mem=24.80 GB
+== node2
+[2026-10-17 16:41:01 TP2] Load weight begin. avail mem=37.28 GB
+[2026-10-17 16:41:09 TP2] Load weight end. elapsed=7.15 s, type=DeepseekV4ForCausalLMDSpark, quant=fp8, avail mem=34.72 GB, mem usage=2.55 GB.
+[2026-10-17 16:41:13 TP2] Memory pool end. avail mem=25.84 GB
+[2026-10-17 16:41:13 TP2] Memory pool end. avail mem=25.70 GB
+== node3
+[2026-10-17 16:41:01 TP3] Load weight begin. avail mem=38.02 GB
+[2026-10-17 16:41:12 TP3] Load weight end. elapsed=10.83 s, type=DeepseekV4ForCausalLMDSpark, quant=fp8, avail mem=35.45 GB, mem usage=2.57 GB.
+[2026-10-17 16:41:13 TP3] Memory pool end. avail mem=26.64 GB
+[2026-10-17 16:41:13 TP3] Memory pool end. avail mem=26.49 GB

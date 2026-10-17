@@ -1,0 +1,4 @@
+node0 last6min max: roceP2p1s0f0=1.5 roceP2p1s0f1=2.9 rocep1s0f0=2.9 rocep1s0f1=31.2  enomem=0
+node1 last6min max: roceP2p1s0f0=1.5 roceP2p1s0f1=3.0 rocep1s0f0=31.1 rocep1s0f1=1.5  enomem=0
+node2 last6min max: roceP2p1s0f0=2.8 roceP2p1s0f1=1.4 rocep1s0f0=1.4 rocep1s0f1=30.7  enomem=0
+node3 last6min max: roceP2p1s0f0=1.5 roceP2p1s0f1=3.0 rocep1s0f0=3.0 rocep1s0f1=31.3  enomem=0

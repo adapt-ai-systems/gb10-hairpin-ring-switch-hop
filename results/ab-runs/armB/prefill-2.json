@@ -1,0 +1,50 @@
+{
+ "benchId": "75c723ed-4314-4953-a4b4-a3f264c828fa",
+ "sparkId": "ring",
+ "status": "completed",
+ "startedAt": 1792255472945,
+ "completedAt": 1792255481626,
+ "config": {
+  "port": 8888,
+  "modelId": "default",
+  "contextSizes": [
+   8192,
+   32768
+  ]
+ },
+ "progress": {
+  "currentContext": null,
+  "completedLevels": 2,
+  "totalLevels": 2,
+  "message": "Done"
+ },
+ "results": [
+  {
+   "targetTokens": 8192,
+   "promptTokens": 8215,
+   "promptChars": 32767,
+   "prefillTps": 4677.17,
+   "ttftMs": 1756.41,
+   "ttftContentMs": 1756.41,
+   "completionTokens": 2,
+   "durationMs": 1806.27,
+   "model": "default",
+   "error": null
+  },
+  {
+   "targetTokens": 32768,
+   "promptTokens": 32788,
+   "promptChars": 131071,
+   "prefillTps": 5095.87,
+   "ttftMs": 6434.23,
+   "ttftContentMs": 6434.23,
+   "completionTokens": 2,
+   "durationMs": 6479.52,
+   "model": "default",
+   "error": null
+  }
+ ],
+ "error": null,
+ "durationMs": 8681,
+ "owner": null
+}

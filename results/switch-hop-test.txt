@@ -1,0 +1,34 @@
+== node1 rule 49161 (switch-side ingress) before
+	Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) 
+IpForwDatagrams                 0                  0.0
+== node1 rule 49161 after
+	Sent 0 bytes 0 pkt (dropped 0, overlimits 0 requeues 0) 
+IpForwDatagrams                 2                  0.0
+== direct neighbour control: node2 -> node3 (no flow label)
+ #bytes #iterations    t_min[usec]    t_max[usec]  t_typical[usec]    t_avg[usec]    t_stdev[usec]   99% percentile[usec]   99.9% percentile[usec] 
+ 61440   2000          7.93           9.68         8.41     	       8.43        	0.00   		9.00    		9.25   
+---------------------------------------------------------------------------------------
+== RETEST 16:34:35Z, --flow_label=16383 on BOTH sides
+-- A: DAC-only node3 -> node1 via node0 (node0 rule 49159)
+Sent 0 bytes 0 pkt IpForw 13082 
+ 61440   2000          9.61           12.18        10.12    	       10.15       	0.09   		11.08   		12.17  
+---------------------------------------------------------------------------------------
+Sent 0 bytes 0 pkt IpForw 13082 
+-- B: via SWITCH node2 -> node0 via node1 (node1 rule 49161)
+Sent 0 bytes 0 pkt IpForw 10 
+ 61440   2000          10.98          14.43        11.48    	       11.51       	0.06   		12.20   		13.69  
+---------------------------------------------------------------------------------------
+Sent 0 bytes 0 pkt IpForw 14 
+  in_hw in_hw_count 1
+	Sent 124776062 bytes 32001 pkt (dropped 0, overlimits 0 requeues 0) 
+	Sent software 0 bytes 0 pkt
+	Sent hardware 124776062 bytes 32001 pkt
+	used_hw_stats delayed
+	Sent 124776062 bytes 32001 pkt (dropped 0, overlimits 0 requeues 0) 
+	Sent software 0 bytes 0 pkt
+	Sent hardware 124776062 bytes 32001 pkt
+	used_hw_stats delayed
+	Sent 124776062 bytes 32001 pkt (dropped 0, overlimits 0 requeues 0) 
+	Sent software 0 bytes 0 pkt
+	Sent hardware 124776062 bytes 32001 pkt
+	used_hw_stats delayed
