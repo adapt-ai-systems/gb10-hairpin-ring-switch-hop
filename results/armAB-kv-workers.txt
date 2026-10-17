@@ -1,0 +1,21 @@
+# armab KV/memory per rank 17:10:50Z
+== node0 head
+[2026-10-17 17:10:25 TP0] Load weight end. elapsed=807.57 s, type=DeepseekV4ForCausalLM, quant=fp8, avail mem=35.68 GB, mem usage=76.10 GB.
+[2026-10-17 17:10:35 TP0] Load weight end. elapsed=7.74 s, type=DeepseekV4ForCausalLMDSpark, quant=fp8, avail mem=33.49 GB, mem usage=2.53 GB.
+[2026-10-17 17:10:38 TP0] Memory pool end. avail mem=24.72 GB
+[2026-10-17 17:10:38 TP0] Memory pool end. avail mem=24.58 GB
+== node1
+[2026-10-17 17:10:25 TP1] Load weight end. elapsed=807.40 s, type=DeepseekV4ForCausalLM, quant=fp8, avail mem=37.55 GB, mem usage=75.46 GB.
+[2026-10-17 17:10:38 TP1] Load weight end. elapsed=10.28 s, type=DeepseekV4ForCausalLMDSpark, quant=fp8, avail mem=34.76 GB, mem usage=2.56 GB.
+[2026-10-17 17:10:38 TP1] Memory pool end. avail mem=25.88 GB
+[2026-10-17 17:10:38 TP1] Memory pool end. avail mem=25.74 GB
+== node2
+[2026-10-17 17:10:25 TP2] Load weight end. elapsed=807.44 s, type=DeepseekV4ForCausalLM, quant=fp8, avail mem=37.14 GB, mem usage=75.31 GB.
+[2026-10-17 17:10:34 TP2] Load weight end. elapsed=6.98 s, type=DeepseekV4ForCausalLMDSpark, quant=fp8, avail mem=33.97 GB, mem usage=2.92 GB.
+[2026-10-17 17:10:38 TP2] Memory pool end. avail mem=25.08 GB
+[2026-10-17 17:10:38 TP2] Memory pool end. avail mem=24.94 GB
+== node3
+[2026-10-17 17:10:25 TP3] Load weight end. elapsed=807.33 s, type=DeepseekV4ForCausalLM, quant=fp8, avail mem=37.47 GB, mem usage=75.38 GB.
+[2026-10-17 17:10:37 TP3] Load weight end. elapsed=9.77 s, type=DeepseekV4ForCausalLMDSpark, quant=fp8, avail mem=34.80 GB, mem usage=2.45 GB.
+[2026-10-17 17:10:38 TP3] Memory pool end. avail mem=25.92 GB
+[2026-10-17 17:10:38 TP3] Memory pool end. avail mem=25.78 GB

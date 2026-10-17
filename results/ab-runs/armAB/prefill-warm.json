@@ -1,0 +1,37 @@
+{
+ "benchId": "f834ce85-df9d-4e69-9748-f7ce81e4c695",
+ "sparkId": "ring",
+ "status": "completed",
+ "startedAt": 1792257231853,
+ "completedAt": 1792257233313,
+ "config": {
+  "port": 8888,
+  "modelId": "default",
+  "contextSizes": [
+   4096
+  ]
+ },
+ "progress": {
+  "currentContext": null,
+  "completedLevels": 1,
+  "totalLevels": 1,
+  "message": "Done"
+ },
+ "results": [
+  {
+   "targetTokens": 4096,
+   "promptTokens": 4117,
+   "promptChars": 16383,
+   "prefillTps": 4014.07,
+   "ttftMs": 1025.64,
+   "ttftContentMs": 1025.64,
+   "completionTokens": 2,
+   "durationMs": 1070.72,
+   "model": "default",
+   "error": null
+  }
+ ],
+ "error": null,
+ "durationMs": 1460,
+ "owner": null
+}

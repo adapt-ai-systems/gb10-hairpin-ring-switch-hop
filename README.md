@@ -18,7 +18,7 @@ We found no public report of the hairpin mesh crossing a switch hop. That is a s
 | [docs/persistence-and-revert.md](docs/persistence-and-revert.md) | What a reboot keeps and loses, the one-command bring-up, how to go back |
 | [patches/plan.py.diff](patches/plan.py.diff) | 4 hunks for `scripts/ring_mesh/plan.py` of the recipe at `27616be` (adds `MESH_REVERSED_HOSTS`) |
 | [scripts/](scripts/) | `fix-gid.sh`, `ring-up.sh`, `ring-down.sh`, `ring.env.example`, `realprefill.py`, `abtab.py` |
-| [results/](results/) | Raw A/B runs, the switch-hop test, qeval, boot logs |
+| [results/](results/) | Raw A/B runs (plain ring, mesh, dual-PCI, dual-PCI + mesh), the switch-hop test, qeval, boot logs |
 
 ## Result
 
@@ -65,6 +65,9 @@ opposite node through the **switch** hop 11.48 us. The neighbour's tc rule match
 5. The reboot persistence of the GID fix was **not tested** (see [docs/persistence-and-revert.md](docs/persistence-and-revert.md)). `ring-up.sh`, `ring-down.sh` and `fix-gid.sh` were syntax-checked with `bash -n`; they are generalised from scripts we ran
    and were not re-run in this form.
 6. The mesh is sparkring's, and its authors label it research-only. A switch hop is outside what they describe. It worked for us; read the licence and the status label before you build on it.
+7. The serve config we adopted adds dual-PCI-domain NCCL on top of the mesh (decode c1 prose / code / structured 84.3 / 137.5 / 154.9 tok/s, real-text prefill 8k / 32k +10 %). The environment changes, library provenance and numbers are in
+   [docs/deepseek-v4.1-flash-1017.md](https://github.com/adapt-ai-systems/DeepSeek-V4.1-Flash-1017-4x-GB10-TP4/blob/1017/docs/deepseek-v4.1-flash-1017.md) of the fork. Raw runs: [results/ab-runs/armAB/](results/ab-runs/armAB/),
+   [results/acc-armAB.txt](results/acc-armAB.txt), [results/qeval-armAB.txt](results/qeval-armAB.txt) (3 runs, 71/75 each).
 
 ## Related
 

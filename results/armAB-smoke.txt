@@ -1,0 +1,5 @@
+[0;32m[+][0m smoke: 19+23 (thinking off)
+{"id":"fd1d4352764040228952ed9186c356b7","object":"chat.completion","created":1792257084,"model":"deepseek-v4.1-flash","choices":[{"index":0,"message":{"role":"assistant","content":"42","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":1}],"usage":{"prompt_tokens":18,"total_tokens":20,"completion_tokens":2,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default","weight_versions":[{"version":"default","start":0,"end":2}]}}
+[0;32m[+][0m smoke: 19+23 (thinking off)
+{"id":"fd1d4352764040228952ed9186c356b7","object":"chat.completion","created":1792257084,"model":"deepseek-v4.1-flash","choices":[{"index":0,"message":{"role":"assistant","content":"42","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":1}],"usage":{"prompt_tokens":18,"total_tokens":20,"completion_tokens":2,"prompt_tokens_details":null,"reasoning_tokens":0},"metadata":{"weight_version":"default","weight_versions":[{"version":"default","start":0,"end":2}]}}
+DSV41-UP OK armab 17:11:24Z

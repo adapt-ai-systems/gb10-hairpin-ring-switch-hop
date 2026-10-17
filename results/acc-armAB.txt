@@ -1,0 +1,10 @@
+prose tok 256 steps 92 tok/step 2.78 decode_tps 84.33 ms/step 33.0
+prose tok 256 steps 92 tok/step 2.78 decode_tps 83.22 ms/step 33.4
+prose tok 256 steps 92 tok/step 2.78 decode_tps 84.2 ms/step 33.0
+code tok 256 steps 50 tok/step 5.12 decode_tps 138.76 ms/step 36.9
+code tok 256 steps 50 tok/step 5.12 decode_tps 138.67 ms/step 36.9
+code tok 256 steps 50 tok/step 5.12 decode_tps 137.67 ms/step 37.2
+structured tok 256 steps 49 tok/step 5.22 decode_tps 154.36 ms/step 33.8
+structured tok 256 steps 49 tok/step 5.22 decode_tps 155.78 ms/step 33.5
+structured tok 256 steps 49 tok/step 5.22 decode_tps 155.99 ms/step 33.5
+ACC_DONE
